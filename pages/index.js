@@ -16,8 +16,6 @@ const Page = () => {
                 <Box display={{md:'flex'}}>
                     <Box flexGrow={1}>
                         <Heading as="h2"><i>"Jack of all trades is a master of none, but oftentimes better than a master of one"</i></Heading>
-                        <p>Diane Kaufman</p>
-                        <p>Web 2 & Web3 developer</p>
                     </Box>
                     <Box flexShrink={0} mt={{base:4, md:0}} ml={{md: 6}} align="center">
                         <Image borderColor="whiteAlpha.800" borderStyle="solid" borderWidth={2} maxWidth="100px" display="inline-block" borderRadius="full" src="/images/profiler.png" alt="Profile Image"/>
@@ -27,7 +25,7 @@ const Page = () => {
                     <Heading as="h3" variant="section-title">
                         Work
                     </Heading>
-                    <Paragraph>Diane is a freelance and fullstack developer with a passion for building tools to let clients and users build their best life.
+                    <Paragraph>Diane is a freelance Web developer with a passion for building tools to let clients and users build their best life.
                         There's no skill she's unwilling to learn to get the job done. She's driven with curiosity to find out how things work, and how to make them work better.
                         When not online, she plays piano, paints, and runs a D&D campaign. Currently, she is looking for new opportunities. 
                     </Paragraph>
@@ -47,12 +45,15 @@ const Page = () => {
                         <BioYear>
                             1995
                         </BioYear>
-                        Born at the ripe old age of 0.IE
-1
-
-                        Gratuated from W.I.T with a B.Sc(Hons) in Entertainment Systems, with a specialisation in game development.
+                        Born at the ripe old age of 0.
                     </BioSection>
                     <BioSection>
+                        <BioYear>
+                            2017
+                        </BioYear>
+                        Gratuated from W.I.T with a B.Sc(Hons) in Entertainment Systems, with a specialisation in game development.
+                    </BioSection>
+                                        <BioSection>
                         <BioYear>2017</BioYear>
                         Worked at Tickets.ie.
                     </BioSection>
@@ -62,7 +63,7 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2019</BioYear>
-                        Worked with clients such as Sportdec & Digit Game Studios.
+                        Worked at Sportdec & Digit Game Studios.
                     </BioSection>
                     <BioSection>
                         <BioYear>2019 to Present</BioYear>
@@ -81,8 +82,8 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link href="https://github.com/yourservicedoc" target="_blank">
-                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>@yourservicedoc</Button>
+                            <Link href="https://github.com/atyourservicedoc" target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>atyourservicedoc</Button>
                             </Link>
                         </ListItem>
                         <ListItem>
