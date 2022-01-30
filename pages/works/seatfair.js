@@ -33,7 +33,7 @@ const Work = () => {
                     within their budget.
                 </P>
                 <P>
-                    I developed the UX flow for bidding, and setting up payment information. I worked on integrating Stripe as our payment provider. Users set a maximum bid for their selection. User's bids start at the current price plus the minimum increase. When outbid, users would
+                    I developed the UX flow for bidding, and setting up payment information. I worked on integrating Stripe as our payment provider. Users set a maximum bid for their selection. User&apos;s bids start at the current price plus the minimum increase. When outbid, users would
                     be notified via email and push notifications that their bid had increased. 
                 </P>
                 <Heading as="h6" variant="section-title">
@@ -41,8 +41,8 @@ const Work = () => {
                 </Heading>
                 <P>
                     I developed a number of data-driven graphs and charts, using chartist.js, to display information
-                    about the data on ticket sales, and bid information on client's events. I also developed interactive displays for the
-                    allocating of seats as available for sale based on pre-existing data from my employer's legacy offerings.
+                    about the data on ticket sales, and bid information on client&apos;s events. I also developed interactive displays for the
+                    allocating of seats as available for sale based on pre-existing data from my employer&apos;s legacy offerings.
                 </P>
                 <Heading as="h6" variant="section-title">
                     Backend

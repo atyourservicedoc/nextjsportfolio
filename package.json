@@ -4,6 +4,7 @@
   "description": "Diane's Website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
+    "prod": "next start",
     "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"

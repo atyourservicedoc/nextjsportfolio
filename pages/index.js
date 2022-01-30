@@ -8,6 +8,7 @@ import { BioSection, BioYear } from "../components/bio";
 import {
     IoLogoGithub, IoLogoTwitter
 } from 'react-icons/io5';
+import profile from '../public/images/profiler.png';
 
 const Page = () => {
     return (
@@ -15,10 +16,10 @@ const Page = () => {
             <Container>
                 <Box display={{md:'flex'}}>
                     <Box flexGrow={1}>
-                        <Heading as="h2"><i>"Jack of all trades is a master of none, but oftentimes better than a master of one"</i></Heading>
+                        <Heading as="h2"><i>&quot;Jack of all trades is a master of none, but oftentimes better than a master of one&quot;</i></Heading>
                     </Box>
                     <Box flexShrink={0} mt={{base:4, md:0}} ml={{md: 6}} align="center">
-                        <Image borderColor="whiteAlpha.800" borderStyle="solid" borderWidth={2} maxWidth="100px" display="inline-block" borderRadius="full" src="/images/profiler.png" alt="Profile Image"/>
+                        <Image borderColor="whiteAlpha.800" borderStyle="solid" borderWidth={2} width={94} height={100} layout="fill" display="inline-block" borderRadius="full" src="/images/profiler.png" alt="Profile Image"/>
                     </Box>
                 </Box>
                 <Section delay={0.1}>
@@ -26,7 +27,7 @@ const Page = () => {
                         Work
                     </Heading>
                     <Paragraph>Diane is a freelance Web developer with a passion for building tools to let clients and users build their best life.
-                        There's no skill she's unwilling to learn to get the job done. She's driven with curiosity to find out how things work, and how to make them work better.
+                        There&apos;s no skill she&apos;s unwilling to learn to get the job done. She&apos;s driven with curiosity to find out how things work, and how to make them work better.
                         When not online, she plays piano, paints, and runs a D&D campaign. Currently, she is looking for new opportunities. 
                     </Paragraph>
                     <Box align="center" my={4}>

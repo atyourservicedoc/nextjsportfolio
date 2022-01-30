@@ -23,7 +23,7 @@ const Work = () => {
                 <P>
                     I was a core developer of a team of 4 over the course of the projects development from initial development to well into launch and active on-site use.
                     I was responsible for developing a number of full features on a solo basis, adding functionality to view and manage surgical data, symptomology, and appointment data.
-                    As new less senior developers joined the team I was responsible for pairing with them on features and ensuring they caught up to speed, didn't feel overwhelmed, and had the
+                    As new less senior developers joined the team I was responsible for pairing with them on features and ensuring they caught up to speed, didn&apos;t feel overwhelmed, and had the
                     appropriate support system in place for assistance and confidence building.  
                 </P>
                 <Heading as="h6" variant="section-title">
