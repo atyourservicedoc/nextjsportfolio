@@ -7,6 +7,10 @@ const Main = ({children, router}) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, intial-scale=1"/>
+                <meta charset="UTF-8" />
+                <meta name="keywords" content="diane, kaufman, developer, freelance, web, front-end, web3, eth, solidity" />
+                <meta name="author" content="Diane Kaufman" />
+                <meta name="description" content="Diane Kaufman is a freelance Web Developer working with Angular, React, and Web3"></meta>
                 <title>Diane Kaufman - Homepage</title>
             </Head>
 
