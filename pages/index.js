@@ -9,14 +9,11 @@ import {
     IoLogoGithub, IoLogoTwitter
 } from 'react-icons/io5';
 
-import ReactGA from 'react-ga';
+import { useTracking } from "../contexts/trackers";
 
 const Page = () => {
     
-    const resumeDownloaded = () => {
-        ReactGA.event({category: 'User', action:'Downloaded CV', })
-    }
-
+    const { logEvent } = useTracking()
 
     return (
         <Layout>
@@ -90,27 +87,26 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <ReactGA.OutboundLink
-                                eventLabel="Visited Github"
+                            <Link
                                 to="https://github.com/atyourservicedoc"
                                 target="_blank"
                             >
-                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>atyourservicedoc</Button>
-                            </ReactGA.OutboundLink>
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>} onClick={() => logEvent({category: 'Outbound', action:'Opened Twitter'})}>atyourservicedoc</Button>
+                            </Link>
                         </ListItem>
                         <ListItem>
-                            <ReactGA.OutboundLink
-                                eventLabel="Visited Twitter"
+                            <Link
                                 to="https://twitter.com/LayerWired"
                                 target="_blank"
                             >
-                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>atyourservicedoc</Button>
-                            </ReactGA.OutboundLink>
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>} 
+                                onClick={() => logEvent({category: 'Outbound', action:'Opened Github'})}>atyourservicedoc</Button>
+                            </Link>
                         </ListItem>
                     </List>
                     <Box align="center" my={4}>
                         <a download href="/files/Diane_Kaufman_Resume.pdf">
-                            <Button rightIcon={<ChevronDownIcon/>} colorScheme="teal" onClick={(e) => resumeDownloaded()}>
+                            <Button rightIcon={<ChevronDownIcon/>} colorScheme="teal" onClick={() => logEvent({category: 'Download', action:'Downloaded Resume'})}>
                                 CV/Resume
                             </Button>
                         </a>
