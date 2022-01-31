@@ -8,9 +8,16 @@ import { BioSection, BioYear } from "../components/bio";
 import {
     IoLogoGithub, IoLogoTwitter
 } from 'react-icons/io5';
-import profile from '../public/images/profiler.png';
+
+import ReactGA from 'react-ga';
 
 const Page = () => {
+    
+    const resumeDownloaded = () => {
+        ReactGA.event({category: 'User', action:'Downloaded CV', })
+    }
+
+
     return (
         <Layout>
             <Container>
@@ -83,19 +90,27 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link href="https://github.com/atyourservicedoc" target="_blank">
+                            <ReactGA.OutboundLink
+                                eventLabel="Visited Github"
+                                to="https://github.com/atyourservicedoc"
+                                target="_blank"
+                            >
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>atyourservicedoc</Button>
-                            </Link>
+                            </ReactGA.OutboundLink>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://twitter.com/LayerWired" target="_blank">
-                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>@LayerWired</Button>
-                            </Link>
+                            <ReactGA.OutboundLink
+                                eventLabel="Visited Twitter"
+                                to="https://twitter.com/LayerWired"
+                                target="_blank"
+                            >
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>atyourservicedoc</Button>
+                            </ReactGA.OutboundLink>
                         </ListItem>
                     </List>
                     <Box align="center" my={4}>
                         <a download href="/files/Diane_Kaufman_Resume.pdf">
-                            <Button rightIcon={<ChevronDownIcon/>} colorScheme="teal">
+                            <Button rightIcon={<ChevronDownIcon/>} colorScheme="teal" onClick={(e) => resumeDownloaded()}>
                                 CV/Resume
                             </Button>
                         </a>
