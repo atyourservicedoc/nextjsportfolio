@@ -12,7 +12,7 @@ import clinical_noting from "../public/images/works/clinicalnoting.jpeg";
 const Works = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW={'container.lg'}>
                 <Heading as="h3" fontSize={20} mb={4}>
                     Works
                 </Heading>

@@ -6,7 +6,7 @@ import Layout from "../../components/layouts/article";
 const Work = () => {
     return (
         <Layout title="Seatfair">
-            <Container>
+            <Container maxW={'container.lg'}>
                 <Title>
                     Clinical Noting <Badge>2020</Badge>
                 </Title>

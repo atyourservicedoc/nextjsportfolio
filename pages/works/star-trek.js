@@ -6,7 +6,7 @@ import Layout from "../../components/layouts/article";
 const Work = () => {
     return (
         <Layout title="Seatfair">
-            <Container>
+            <Container maxW={'container.lg'}>
                 <Title>
                     Star Trek Fleet Command <Badge>2019</Badge>
                 </Title>
