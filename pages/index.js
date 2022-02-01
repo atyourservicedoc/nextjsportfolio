@@ -87,21 +87,21 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link
-                                to="https://github.com/atyourservicedoc"
+                            <a
+                                href="https://github.com/atyourservicedoc"
                                 target="_blank"
                             >
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>} onClick={() => logEvent({category: 'Outbound', action:'Opened Twitter'})}>atyourservicedoc</Button>
-                            </Link>
+                            </a>
                         </ListItem>
                         <ListItem>
-                            <Link
-                                to="https://twitter.com/LayerWired"
+                            <a
+                                href="https://twitter.com/LayerWired"
                                 target="_blank"
                             >
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>} 
-                                onClick={() => logEvent({category: 'Outbound', action:'Opened Github'})}>atyourservicedoc</Button>
-                            </Link>
+                                onClick={() => logEvent({category: 'Outbound', action:'Opened Github'})}>@LayerWired</Button>
+                            </a>
                         </ListItem>
                     </List>
                     <Box align="center" my={4}>
