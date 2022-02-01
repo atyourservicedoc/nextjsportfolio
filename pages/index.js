@@ -17,7 +17,7 @@ const Page = () => {
 
     return (
         <Layout>
-            <Container>
+            <Container maxW={'container.lg'}>
                 <Box display={{md:'flex'}}>
                     <Box flexGrow={1}>
                         <Heading as="h2"><i>&quot;Jack of all trades is a master of none, but oftentimes better than a master of one&quot;</i></Heading>
