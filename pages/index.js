@@ -90,6 +90,7 @@ const Page = () => {
                             <a
                                 href="https://github.com/atyourservicedoc"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>} onClick={() => logEvent({category: 'Outbound', action:'Opened Twitter'})}>atyourservicedoc</Button>
                             </a>
@@ -98,6 +99,7 @@ const Page = () => {
                             <a
                                 href="https://twitter.com/LayerWired"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>} 
                                 onClick={() => logEvent({category: 'Outbound', action:'Opened Github'})}>@LayerWired</Button>
