@@ -12,7 +12,7 @@ function TrackingProvider(props) {
 
     const handleRouteChange = url => {
         ReactGA.set({page:url}, analytics.trackers);
-        ReactGA.pageView(url, analytics.trackers);
+        ReactGA.pageview(url, analytics.trackers);
     }
 
     const logEvent = ({ category = '', action = '', label = ''}) => {
